@@ -1,0 +1,22 @@
+$skillBarHeight: 20px;
+$innerSkillBarHeight: 16px;
+$innerSkillBarPadding: 2px;
+
+.skill-bar-container {
+  .bar {
+    background: $secondaryColor;
+    height: $skillBarHeight;
+    text-align: left;
+    padding: 0;
+    margin: 0 15px 0 40px;
+    float: left;
+    width: 90%;
+  }
+  .value-bar {
+    background-color: $primaryColor;
+    height: $innerSkillBarHeight;
+    padding: $innerSkillBarPadding;
+    margin-right: 40px;
+  }
+  .value {}
+}

@@ -1,10 +1,46 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* handle .navbar-fixed-top */
+  padding-top: 70px;
+  margin-bottom: 30px;
+  background-color: #e9ece5;
+  color: #333; }
+
 .menu {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-}
+  width: 100%; }
 
 .main-content {
-  clear: both;
-}
+  clear: both; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: right; }
+
+/* Pages */
+.home-content .main-photo {
+  clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
+
+/* Components */
+.skill-bar-container .bar {
+  background: #b3c2bf;
+  height: 20px;
+  text-align: left;
+  padding: 0;
+  margin: 0 15px 0 40px;
+  float: left;
+  width: 90%; }
+
+.skill-bar-container .value-bar {
+  background-color: #c0dfd9;
+  height: 16px;
+  padding: 2px;
+  margin-right: 40px; }

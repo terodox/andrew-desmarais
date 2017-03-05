@@ -1,0 +1,45 @@
+$backgroundColor: #e9ece5;
+$primaryColor: #c0dfd9;
+$secondaryColor: #b3c2bf;
+$textColor: #333;
+
+$navBarFixedTopPadding: 70px;
+$footerBarHeight: 30px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* handle .navbar-fixed-top */
+  padding-top: $navBarFixedTopPadding;
+  margin-bottom: $footerBarHeight;
+  background-color: $backgroundColor;
+  color: $textColor;
+}
+
+.menu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.main-content {
+  clear: both;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footerBarHeight;
+  text-align:right;
+}
+
+/* Pages */
+@import "home/home";
+
+/* Components */
+@import "components/skillBar/skillBar";
