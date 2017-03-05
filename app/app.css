@@ -1,0 +1,10 @@
+.menu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.main-content {
+  clear: both;
+}
