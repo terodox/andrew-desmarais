@@ -30,11 +30,18 @@ body {
   clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
 
 /* Components */
+.skills-container {
+  text-align: center; }
+
 .skill-bar-container {
   width: 120px;
   text-align: center;
-  float: left;
+  display: inline-block;
   margin: 10px; }
+
+.main-photo {
+  width: 100%;
+  margin-top: 50px; }
 
 /****************************************************************
  *
