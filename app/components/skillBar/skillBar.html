@@ -1,13 +1,12 @@
 <div class="skill-bar-container">
-    <div class="row skill-name">
-        <div class="col-md-12">
-            {{name}}
+    <div class="c100 p{{value}}">
+        <span>{{value}}%</span>
+        <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
         </div>
     </div>
-    <div class="row bar-container">
-        <div class="col-md-12 bar">
-            <div class="value-bar" style="width:{{value}}%;"></div>
-        </div>
-        <div class="value">{{value}}</div>
-    </div>
+    <p class="skill-name">
+        {{name}}
+    </p>
 </div>
