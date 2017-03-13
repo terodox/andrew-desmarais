@@ -1,1 +1,10 @@
-<p>Gosh darn it people like me</p>
+<div class="recommendations-container" ng-controller="recommendationsController as recommendations">
+    <div class="recommendation" ng-repeat="recommendation in recommendations.recommendedMe">
+        <div class="recommended-by">
+            <span class="name">{{recommendation.name}}</span> - <span class="title">{{recommendation.title}}</span>
+        </div>
+        <div class="recommendation-body">
+            {{recommendation.recommendationBody}}
+        </div>
+    </div>
+</div>
