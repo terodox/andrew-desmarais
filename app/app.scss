@@ -1,6 +1,7 @@
-$backgroundColor: #e9ece5;
-$primaryColor: #c0dfd9;
-$secondaryColor: #b3c2bf;
+$backgroundColor: #efefef;
+$primaryColor: #caebf2;
+$secondaryColor: #a9a9a9;
+$highlightColor: #ff3b3f;
 $textColor: #333;
 
 $navBarFixedTopPadding: 70px;
@@ -38,8 +39,13 @@ body {
   text-align:right;
 }
 
+blockquote {
+  border-left-color: $highlightColor;
+}
+
 /* Pages */
 @import "home/home";
+@import "summary/summary";
 
 /* Components */
 @import "components/skillBar/skillBar";
