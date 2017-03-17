@@ -1,0 +1,20 @@
+.recommendations-container {
+  h1 {
+    margin-bottom: 30px;
+  }
+  .recommendation {
+    .recommended-by {
+      .name {
+        font-size: x-large;
+      }
+      .title {
+        white-space: nowrap;
+        font-size: large;
+      }
+    }
+    .recommendation-body::first-letter {
+      font-size: xx-large;
+      font-family: "Times";
+    }
+  }
+}
