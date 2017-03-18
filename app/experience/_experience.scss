@@ -1,14 +1,23 @@
 .experience-container {
   .one-entry {
     margin-bottom: 50px;
-    .company {}
-    .position {}
-    .time-line {
-      font-weight: bold;
+    img {
+      float: left;
+      padding-right: 20px;
+      width: 170px;
+      height: 150px;
+    }
+    .details-container {
+      .time-line {
+        font-weight: bold;
 
-      .from:after {
-        content: " - ";
+        .from:after {
+          content: " - ";
+        }
       }
+    }
+    .results-container {
+      clear: both;
     }
   }
 }

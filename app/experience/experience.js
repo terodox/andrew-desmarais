@@ -13,6 +13,7 @@ angular.module('andrewDesmaraisApp.experience', ['ngRoute'])
   this.experience = [
       {
           company: "Newforma",
+          logoUrl: "https://lh3.googleusercontent.com/Cr1Euyncr5ExcWRXgG4j-Zf-dIpRzzDjE6BlvjYPwBoJr3mQNwyA53bKZi_IkJI6Yu0=w300",
           title: "Principal Engineer/Technical Lead",
           fromDateString: "September 2014",
           toDateString: "Present",
@@ -28,6 +29,7 @@ angular.module('andrewDesmaraisApp.experience', ['ngRoute'])
       },
       {
           company: "CustomScoop",
+          logoUrl: "https://pbs.twimg.com/profile_images/3282187373/09f97ee69a31621313eb8f00881020da_400x400.png",
           title: "Director of Web Development/Senior Full Stack Developer",
           fromDateString: "2006",
           toDateString: "September 2014",
@@ -39,7 +41,8 @@ angular.module('andrewDesmaraisApp.experience', ['ngRoute'])
           ]
       },
       {
-          company: "Skillsoft LLC",
+          company: "Skillsoft",
+          logoUrl: "https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/0024/3655/brand.gif?itok=KYH1zM8K",
           title: "Hosting Engineer/Application Engineer",
           fromDateString: "2004",
           toDateString: "2006",
