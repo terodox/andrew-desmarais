@@ -1,0 +1,14 @@
+.experience-container {
+  .one-entry {
+    margin-bottom: 50px;
+    .company {}
+    .position {}
+    .time-line {
+      font-weight: bold;
+
+      .from:after {
+        content: " - ";
+      }
+    }
+  }
+}
