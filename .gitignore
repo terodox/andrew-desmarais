@@ -11,3 +11,5 @@ docs/**/*.scss
 docs/**/*_test.js
 !docs/bower_components
 !docs/app.css
+!docs/bower_components/bootstrap/dist/css/bootstrap.min.css
+!docs/bower_components/bootstrap/dist/css/bootstrap-theme.min.css
