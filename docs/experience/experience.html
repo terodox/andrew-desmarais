@@ -1,0 +1,18 @@
+<div class="experience-container" ng-controller="experienceController as experience">
+    <h1>The experience that has helped me grow</h1>
+    <div class="one-entry" ng-repeat="entry in experience.experience">
+        <img src="{{entry.logoUrl}}">
+        <div class="details-container">
+            <h2 class="company">{{entry.company}}</h2>
+            <h3 class="title">{{entry.title}}</h3>
+            <div class="time-line"><span class="from">{{entry.fromDateString}}</span> <span class="to">{{entry.toDateString}}</span></div>
+            <div class="summary">{{entry.summary}}</div>
+        </div>
+        <div class="results-container clearfix">
+            <h3>Results</h3>
+            <ul ng-repeat="result in entry.results">
+                <li>{{result}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

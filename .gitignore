@@ -7,3 +7,6 @@ tmp
 .idea
 *.css
 !app/circle.css
+docs/**/*.scss
+docs/**/*_test.js
+!docs/app.css

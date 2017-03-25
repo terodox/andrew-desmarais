@@ -31,6 +31,7 @@
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor e2e-tests/protractor.conf.js",
     "build-css": "del /f app\\app.css && node-sass app/app.scss -o app/",
-    "watch-css": "del /f app\\app.css && node-sass -w app/app.scss -o app/"
+    "watch-css": "del /f app\\app.css && node-sass -w app/app.scss -o app/",
+    "publish": "xcopy app docs /s /y"
   }
 }
