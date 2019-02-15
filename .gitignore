@@ -5,7 +5,6 @@ bower_components/
 tmp
 .DS_Store
 .idea
-*.css
 !app/circle.css
 docs/**/*.scss
 docs/**/*_test.js
