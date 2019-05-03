@@ -8,9 +8,18 @@ export const template = `
         font-family: 'Helvetiva Neue', Arial, Helvetica, sans-serif;
         font-size: 12px;
     }
+    .url-picker {
+        height: 400px;
+        width: 400px;
+
+        background-color: #fff;
+        border: 1px dashed #000;
+    }
 </style>
-<div>
-    <img src="https://assets.meltwater.io/flux-icons/latest/mediatypes/svg/news.svg">
+<img src="https://assets.meltwater.io/flux-icons/latest/mediatypes/svg/news.svg">
+<div class="url-picker">
+Hooray!
+<button>Close</button>
 </div>
 `;
 
@@ -24,10 +33,26 @@ class SharedPane extends HTMLElement {
 
         this.root.innerHTML = template;
 
-        this.iframe = this.root.querySelector('iframe');
+        this.img = this.root.querySelector('img');
+        this.img.onclick = this.openUrlPickerVisibility.bind(this);
+
+        this.urlPickerContainer = this.root.querySelector('.url-picker');
+
+        this.closeButton = this.root.querySelector('button');
+        this.closeButton.onclick = this.closeUrlPickerVisibility.bind(this);
 
         this.input = this.root.querySelector('input');
         this.input.onchange = this.updateIframe.bind(this);
+    }
+
+    openUrlPickerVisibility() {
+        this.img.style.display = 'none';
+        this.urlPickerContainer.style.display = 'block';
+    }
+
+    closeUrlPickerVisibility() {
+        this.img.style.display = 'block';
+        this.urlPickerContainer.style.display = 'none';
     }
 
     updateIframe() {
