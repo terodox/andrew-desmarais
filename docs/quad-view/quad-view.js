@@ -13,6 +13,10 @@ export const template = `
     .url-bar {
         width: 90%;
     }
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
 </style>
 <div>
     <input class="url-bar">
