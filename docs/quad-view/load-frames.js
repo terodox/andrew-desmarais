@@ -1,5 +1,6 @@
 function loadTheFrame() {
-    const upperLeft = document.getElementById('upper-left');
-    console.log(upperLeft);
-    upperLeft.src = 'https://giphy.com/gifs/garyvee-microphone-gary-vaynerchuk-is-this-thing-on-f9SgNsok0zsxI3vS56/fullscreen';
+    document.getElementById('upper-left').src = window.localStorage.getItem('upper-left');
+    document.getElementById('upper-right').src = window.localStorage.getItem('upper-right');
+    document.getElementById('lower-left').src = window.localStorage.getItem('lower-left');
+    document.getElementById('lower-right').src = window.localStorage.getItem('lower-right');
 }
