@@ -1,8 +1,8 @@
 export const template = `
 <style>
     :host {
-        width: .5vw;
-        height: .5vh;
+        width: 50vw;
+        height: 50vh;
         margin: 0;
         padding: 0;
         display: inline-block;
