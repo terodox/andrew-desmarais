@@ -12,7 +12,7 @@ export const template = `
     }
     .url-bar {
         position: absolute;
-        width: 90%;
+        width: 49vw;
     }
     iframe {
         width: 100%;
