@@ -4,14 +4,12 @@
         <title>Split That View</title>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="quad-view.css" />
-        <script type="module" src="quad-view.js"></script>
+        <script src="load-frames.js"></script>
     </head>
     <frameset frameborder="0" rows="*,*,*">
-        <configure-quad-view></configure-quad-view>
         <frameset frameborder="0" cols="*,*">
-            <frame frameborder="0">
-            <frame frameborder="0">
+            <frame frameborder="0" id="upper-left">
+            <frame frameborder="0" id="upper-right">
         </frameset>
         <frameset frameborder="0" cols="*,*">
             <frame frameborder="0">
