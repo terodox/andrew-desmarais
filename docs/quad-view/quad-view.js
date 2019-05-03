@@ -11,6 +11,7 @@ export const template = `
         font-size: 12px;
     }
     .url-bar {
+        position: absolute;
         width: 90%;
     }
     iframe {
