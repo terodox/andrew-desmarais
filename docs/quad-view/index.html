@@ -7,10 +7,17 @@
         <link rel="stylesheet" href="quad-view.css" />
     </head>
     <body>
-        <shared-pane id="upper-left"></shared-pane>
-        <shared-pane id="upper-right"></shared-pane>
-        <shared-pane id="lower-left"></shared-pane>
-        <shared-pane id="lower-right"></shared-pane>
+        <configure-quad-view></configure-quad-view>
+        <frameset frameborder="0" rows="*,*">
+            <frameset frameborder="0" cols="*,*">
+                <frame frameborder="0">
+                <frame frameborder="0">
+            </frameset>
+            <frameset frameborder="0" cols="*,*">
+                <frame frameborder="0">
+                <frame frameborder="0">
+            </frameset>
+        </frameset>
 
         <script type="module" src="quad-view.js"></script>
     </body>
