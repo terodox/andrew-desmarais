@@ -39,6 +39,18 @@ class SharedPane extends HTMLElement {
         this.root = this.attachShadow({ mode: 'open' });
 
         this.root.innerHTML = template;
+
+        this.iframe = this.root.querySelector('iframe');
+
+        this.input = this.root.querySelector('input');
+        this.input.onchange = this.updateIframe.bind(this);
+    }
+
+    updateIframe() {
+        clearTimeout(this.debounceTimer);
+        this.debounceTimer = setTimeout(() => {
+            this.iframe.src = this.input.value;
+        }, 250);
     }
 }
 
