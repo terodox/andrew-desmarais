@@ -1,4 +1,4 @@
-import { template } from './share-pane-template.html';
+import { template } from './share-pane-template.html.js';
 
 class SharedPane extends HTMLElement {
     static get tagName() {

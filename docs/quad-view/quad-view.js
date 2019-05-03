@@ -1,1 +1,1 @@
-import './shared-pane';
+import './shared-pane.js';
