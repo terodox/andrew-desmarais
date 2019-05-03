@@ -11,7 +11,7 @@ export const template = `
         font-size: 12px;
     }
     .url-bar {
-        width: 100%;
+        width: 90%;
     }
 </style>
 <div>
