@@ -25,7 +25,7 @@ Hooray!
 
 class SharedPane extends HTMLElement {
     static get tagName() {
-        return 'configure-quad-view>';
+        return 'configure-quad-view';
     }
 
     connectedCallback() {
