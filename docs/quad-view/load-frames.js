@@ -1,6 +1,17 @@
+const BOXES = [
+    'upper-right',
+    'upper-left',
+    'lower-right',
+    'lower-left'
+];
+
 function loadTheFrame() {
-    document.getElementById('upper-left').src = window.localStorage.getItem('upper-left');
-    document.getElementById('upper-right').src = window.localStorage.getItem('upper-right');
-    document.getElementById('lower-left').src = window.localStorage.getItem('lower-left');
-    document.getElementById('lower-right').src = window.localStorage.getItem('lower-right');
+    const searchParams = new URLSearchParams(location.search);
+
+    BOXES.forEach(box => {
+        if (searchParams.has(box)) {
+            window.localStorage.setItem(box, searchParams.get(box))
+        }
+        document.getElementById(box).src = window.localStorage.getItem(box);
+    });
 }
