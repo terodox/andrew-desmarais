@@ -1,4 +1,4 @@
-import { consoleTheLogs } from '/importme.mjs';
+importScripts('/importme.mjs');
 
 const CACHE_NAME = 'ROOT_CACHE';
 
