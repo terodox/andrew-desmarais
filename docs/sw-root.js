@@ -8,7 +8,6 @@ async function cacheAllThings() {
         './index.html',
         './app.js',
         './app.css',
-        './app.js',
     ]);
 }
 
