@@ -11,8 +11,6 @@ async function cacheAllThings() {
     ]);
 }
 
-
-
 self.addEventListener('install', async (event) => {
     consoleTheLogs('ROOT DONE', event);
     event.waitUntil(cacheAllThings());
