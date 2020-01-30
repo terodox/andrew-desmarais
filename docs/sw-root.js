@@ -1,5 +1,18 @@
-self.addEventListener('install', (event) => {
+const CACHE_NAME = 'ROOT_CACHE';
+
+async function cacheAllThings() {
+    const cache = await caches.open(CACHE_NAME);
+    cache.addAll([
+        './index.html',
+        './app.js',
+        './app.css',
+        './app.js',
+    ]);
+}
+
+self.addEventListener('install', async (event) => {
     console.log('ROOT DONE', event);
+    event.waitUntil(cacheAllThings());
 });
 
 self.addEventListener('fetch', (event) => {
