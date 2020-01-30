@@ -1,3 +1,5 @@
+import { consoleTheLogs } from '/importme.mjs';
+
 const CACHE_NAME = 'ROOT_CACHE';
 
 async function cacheAllThings() {
