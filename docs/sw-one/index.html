@@ -13,7 +13,7 @@
                         scope: '/sw-one/'
                     })
                     .then((registration) => {
-                    console.log('Service Worker ONE registration completed with scope: ', registration.scope);
+                    console.log('Service Worker ONE registration completed: ', registration);
                     }, (err) => {
                         console.log('Service Worker ONE registration failed', err);
                     })
