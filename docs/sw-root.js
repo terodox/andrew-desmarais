@@ -13,7 +13,7 @@ async function cacheAllThings() {
 }
 
 self.addEventListener('install', async (event) => {
-    console.log('ROOT DONE', event);
+    consoleTheLogs('ROOT DONE', event);
     event.waitUntil(cacheAllThings());
 });
 
@@ -22,14 +22,14 @@ self.addEventListener('fetch', (event) => {
     if ('storage' in navigator && 'estimate' in navigator.storage) {
         navigator.storage.estimate()
              .then(function(estimate){
-                  console.log(`Using ${estimate.usage} out of ${estimate.quota} bytes.`);
+                consoleTheLogs(`Using ${estimate.usage} out of ${estimate.quota} bytes.`);
              });
     }
 
     event.respondWith(
         fetch(event.request)
             .then(response => {
-                console.log('sw-root fetch interception');
+                consoleTheLogs('sw-root fetch interception');
                 return response;
             })
     )
