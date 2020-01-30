@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Service Worker TWO</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/sw-two/sw-two.js', {
+                        scope: '/sw-two'
+                    })
+                    .then((registration) => {
+                    console.log('Service Worker TWO registration completed with scope: ', registration.scope);
+                    }, (err) => {
+                        console.log('Service Worker TWO registration failed', err);
+                    })
+                })
+            } else {
+                console.log('Service Workers not supported - TWO')
+            }
+        </script>
+    </head>
+    <body>
+        <a class="twitter-timeline" href="https://twitter.com/GuyFieri?ref_src=twsrc%5Etfw">Tweets by GuyFieri</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </body>
+</html>

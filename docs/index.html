@@ -13,6 +13,22 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
   <link rel="stylesheet" href="app.css" />
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw-root.js', {
+                scope: '/'
+            })
+            .then((registration) => {
+            console.log('Service Worker ROOT registration completed with scope: ', registration.scope);
+            }, (err) => {
+                console.log('Service Worker ROOT registration failed', err);
+            })
+        })
+    } else {
+        console.log('Service Workers not supported - ROOT')
+    }
+</script>
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
