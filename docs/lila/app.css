@@ -1,0 +1,182 @@
+/* Tile Styles */
+body div.brick_grey {
+    background-image: url(tiles/brick_grey.png);
+}
+body div.brick_red {
+    background-image: url(tiles/brick_red.png);
+}
+body div.dirt_grass {
+    background-image: url(tiles/dirt_grass.png);
+}
+body div.dirt_sand {
+    background-image: url(tiles/dirt_sand.png);
+}
+body div.dirt_snow {
+    background-image: url(tiles/dirt_snow.png);
+}
+body div.dirt {
+    background-image: url(tiles/dirt.png);
+}
+body div.grass_top {
+    background-image: url(tiles/grass_top.png);
+}
+body div.gravel_dirt {
+    background-image: url(tiles/gravel_dirt.png);
+}
+body div.gravel_stone {
+    background-image: url(tiles/gravel_stone.png);
+}
+body div.greysand {
+    background-image: url(tiles/greysand.png);
+}
+body div.greystone_ruby_alt {
+    background-image: url(tiles/greystone_ruby_alt.png);
+}
+body div.greystone_sand {
+    background-image: url(tiles/greystone_sand.png);
+}
+body div.greystone {
+    background-image: url(tiles/greystone.png);
+}
+body div.ice {
+    background-image: url(tiles/ice.png);
+}
+body div.lava {
+    background-image: url(tiles/lava.png);
+}
+body div.leaves_orange {
+    background-image: url(tiles/leaves_orange.png);
+}
+body div.leaves {
+    background-image: url(tiles/leaves.png);
+}
+body div.oven {
+    background-image: url(tiles/oven.png);
+}
+body div.redsand {
+    background-image: url(tiles/redsand.png);
+}
+body div.redstone_emerald_alt {
+    background-image: url(tiles/redstone_emerald_alt.png);
+}
+body div.redstone_sand {
+    background-image: url(tiles/redstone_sand.png);
+}
+body div.redstone {
+    background-image: url(tiles/redstone.png);
+}
+body div.sand {
+    background-image: url(tiles/sand.png);
+}
+body div.snow {
+    background-image: url(tiles/snow.png);
+}
+body div.stone_browniron_alt {
+    background-image: url(tiles/stone_browniron_alt.png);
+}
+body div.stone_coal_alt {
+    background-image: url(tiles/stone_coal_alt.png);
+}
+body div.stone_diamond_alt {
+    background-image: url(tiles/stone_diamond_alt.png);
+}
+body div.stone_dirt {
+    background-image: url(tiles/stone_dirt.png);
+}
+body div.stone_gold_alt {
+    background-image: url(tiles/stone_gold_alt.png);
+}
+body div.stone_grass {
+    background-image: url(tiles/stone_grass.png);
+}
+body div.stone_sand {
+    background-image: url(tiles/stone_sand.png);
+}
+body div.stone_iron_alt {
+    background-image: url(tiles/stone_iron_alt.png);
+}
+body div.stone_silver_alt {
+    background-image: url(tiles/stone_silver_alt.png);
+}
+body div.stone_snow {
+    background-image: url(tiles/stone_snow.png);
+}
+body div.stone {
+    background-image: url(tiles/stone.png);
+}
+body div.table {
+    background-image: url(tiles/table.png);
+}
+body div.trunk-side {
+    background-image: url(tiles/trunk-side.png);
+}
+body div.trunk_white_side {
+    background-image: url(tiles/trunk_white_side.png);
+}
+body div.water {
+    background-image: url(tiles/water.png);
+}
+body div.wood_red {
+    background-image: url(tiles/wood_red.png);
+}
+body div.wood {
+    background-image: url(tiles/wood.png);
+}
+
+/* Layout styles */
+body {
+    --selected: inset 0 0 30px #666;
+    --dimension-left-panel: 100px;
+    --dimension-tile: 50px;
+    --left-panel-width: 200px;
+}
+
+.selected {
+    box-shadow: var(--selected);
+}
+
+.left-panel {
+    position: absolute;
+    top: 0;
+    left: -199px;
+    height: 98vh;
+    width: var(--left-panel-width);
+    overflow-y: scroll;
+}
+
+.left-panel:hover {
+    left: 0;
+}
+
+.left-panel div {
+    height: var(--dimension-left-panel);
+    width: var(--dimension-left-panel);
+    background-size: var(--dimension-left-panel) var(--dimension-left-panel);
+}
+
+.left-panel div:hover {
+    box-shadow: var(--selected);
+}
+
+.tile-container {
+    display: flex;
+    flex-direction: column;
+    width: 2000px;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row div {
+    height: var(--dimension-tile);
+    width: var(--dimension-tile);
+    background-color: #CCC;
+    background-size: var(--dimension-tile) var(--dimension-tile);
+}
+
+.row div:hover {
+    box-shadow: var(--selected);
+}

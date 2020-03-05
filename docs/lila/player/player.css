@@ -1,0 +1,42 @@
+.player {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+
+.player .head {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 72px;
+    width: 78px;
+    background-image: url(female_head.png);
+}
+
+.player .body {
+    position: absolute;
+    top: 84px;
+    left: 31px;
+    height: 59px;
+    width: 44px;
+    background-image: url(female_body.png);
+}
+
+.player .arm {
+    position: absolute;
+    top: 88px;
+    left: 31px;
+    height: 66px;
+    width: 28px;
+    background-image: url(female_arm.png);
+    transform: rotate(30deg);
+}
+
+.player .leg {
+    position: absolute;
+    top: 143px;
+    left: 44px;
+    height: 56px;
+    width: 28px;
+    background-image: url(female_leg.png);
+}
