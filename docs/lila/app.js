@@ -19,8 +19,6 @@ document.querySelectorAll('.row div').forEach(function (el) {
 });
 
 // Make player draggable
-const tileContainer = document.querySelector('tile-container');
-const draggable = new PlainDraggable(document.getElementById('player', {
-    containment: tileContainer,
-}));
-draggable.snap = { step: 50 };
+const draggable = new PlainDraggable(document.getElementById('player'), {
+    snap: { step: 50 }
+});

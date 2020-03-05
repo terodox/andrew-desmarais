@@ -128,17 +128,29 @@ body {
     --selected: inset 0 0 30px #666;
     --dimension-left-panel: 100px;
     --dimension-tile: 50px;
-    --left-panel-width: 200px;
+    --left-panel-width: 128px;
 }
 
 .selected {
     box-shadow: var(--selected);
 }
 
+#toolbox-handle {
+    position: absolute;
+    top: 61px;
+    left: 57px;
+    border-radius: 5px 5px 0 0;
+    background-color: cyan;
+    transform: rotate(90deg);
+    padding: 6px;
+    z-index: 0;
+    height: 15px;
+}
+
 .left-panel {
     position: absolute;
     top: 0;
-    left: -199px;
+    left: -100px;
     height: 98vh;
     width: var(--left-panel-width);
     overflow-y: scroll;
@@ -152,6 +164,7 @@ body {
     height: var(--dimension-left-panel);
     width: var(--dimension-left-panel);
     background-size: var(--dimension-left-panel) var(--dimension-left-panel);
+    z-index: 1;
 }
 
 .left-panel div:hover {

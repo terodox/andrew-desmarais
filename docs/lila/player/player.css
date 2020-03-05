@@ -1,7 +1,8 @@
 .player {
     position: absolute;
     height: 200px;
-    width: 200px;
+    width: 100px;
+    left: 200px;
 }
 
 .player .head {
